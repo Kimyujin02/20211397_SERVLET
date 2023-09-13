@@ -1,5 +1,5 @@
 <%@ page contentType="text/html; charset=utf-8"%>
-<%! String greeting = "상단 페이지 : 쇼핑몰 메인화면 문자열 홍길동님";
+<%! String greeting = "Apple Store";
 	String tagline = "하단 페이지 : 확인";%>
 	<div class="jumbotron">
 		<div class="container">
@@ -27,8 +27,8 @@
 
 <div class="list-group">
       <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-        지포스 3060 시리즈
+        iphone 15 pro
       </a>
-      <a href="#" class="list-group-item list-group-item-action">지포스 3070 시리즈</a>
-      생략….
+      <a href="#" class="list-group-item list-group-item-action">MacBook Air</a>
+      <a href="#" class="list-group-item list-group-item-action">iPad</a>
     </div>
