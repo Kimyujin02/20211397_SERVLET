@@ -2,7 +2,7 @@
 <%@ page import="java.util.ArrayList"%>
 <%@ page import="dto.Product"%>
 <jsp:useBean id="productDAO" class="dao.ProductRepository" scope="session" />
-<%! String greeting = "현재 페이지는 VGA 그래픽 카드 상품 목록입니다.";
+<%! String greeting = "Apple 상품 목록입니다.";
    String tagline = "하단 페이지 : 확인";%>
 <div class="jumbotron">
 <div class="container">
@@ -13,7 +13,7 @@
 </div>
 
  <div class="card bg-dark text-white">
-    <img src="image/iphone 14.jpg" class="card-img" alt="...">
+    <img src="image/iphone 14.jpg" style="max-width: 1000px; height: auto; display: block; margin: 0 auto;" class="card-img" alt="...">
     <div class="card-img-overlay">
     <h5 class="card-title">iphone 14 pro</h5>
     <p class="card-text">출처 : apple</p>
@@ -43,19 +43,21 @@
          %>
          <div class="col-md-4">
             <div class="card bg-dark text-white">
-                        <img src="image/ipad.png" class="card-img" alt="...">
+                        <img src="image/<%=product.getProductId()%>.png" class="card-img" alt="...">
                         <div class="card-img-overlay">
-                        <h5 class="card-title">그래픽 카드 이미지 샘플</h5>
-                        <p class="card-text">출처 : 구글 검색</p>
+                        <h5 class="card-title">ipad pro</h5>
+                        <p class="card-text">출처 : apple</p>
                         </div>
                         </div>
 
-            <h3><%=product.getPname()%></h3>
-            <p><%=product.getDescription()%>
-            <p><%=product.getUnitPrice()%>원
+            <h3><%=product.getPname()%></h3> <!-- 상품 이름 -->
+            <p><%=product.getDescription()%> <!-- 상품 정보 -->
+            <p><%=product.getUnitPrice()%>원 <!-- 상품 가격 -->
+            <p><a href="product_detail.jsp?id=<%=product.getProductId()%>" class="btn btn-secondary" role="button"> 상품 상세 정보 &raquo;</a>
+
          </div>
          <%
-            }
+            } //반복문 끝
          %>
       </div>
       <hr>
