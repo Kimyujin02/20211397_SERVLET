@@ -5,6 +5,11 @@ import dto.Product; // dao기준으로 외부 서버를 가져오는 것임
 public class ProductRepository {
 
 	private ArrayList<Product> listOfProducts = new ArrayList<Product>(); // ArrayList를 Product로 캐스팅
+    private static ProductRepository instance = new ProductRepository();
+
+    public static ProductRepository getInstance(){
+	return instance;
+   }
 
 	public ProductRepository() {
 		Product phone = new Product("P1234", "iPhone 14pro", 1564000);
@@ -13,6 +18,8 @@ public class ProductRepository {
 		phone.setManufacturer("Apple");
 		phone.setUnitsInStock(1000);
 		phone.setCondition("New");
+        phone.setFilename("P1234.png");
+
         
         Product notebook = new Product("P1235", "MacBook Air 13", 1590000);
 		notebook.setDescription("13.3-inch, IPS LED display, 5rd Generation Intel Core processors");
@@ -20,6 +27,8 @@ public class ProductRepository {
 		notebook.setManufacturer("Apple");
 		notebook.setUnitsInStock(1000);
 		notebook.setCondition("Refurbished");
+        notebook.setFilename("P1235.png");
+
 
 		Product ipad = new Product("P1236", "iPad Pro", 1249000);
 		ipad.setDescription("212.8*125.6*6.6mm,  Super AMOLED display, Octa-Core processor");
@@ -27,6 +36,8 @@ public class ProductRepository {
 		ipad.setManufacturer("Apple");
 		ipad.setUnitsInStock(1000);
 		ipad.setCondition("Old");
+        ipad.setFilename("P1236.png");
+
 		
 		// 위와 같이 상품 초기화 하고 아래에 상품을 추가
 
@@ -52,6 +63,8 @@ public class ProductRepository {
 		}
 		return productById;
 	}
-
+       public void addProduct(Product product) {
+	listOfProducts.add(product);
+   }
 }
 
