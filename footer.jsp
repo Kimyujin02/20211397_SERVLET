@@ -1,4 +1,5 @@
-<%@ page contentType="text/html; charset=utf-8"%>	
+<%@ page contentType="text/html; charset=utf-8"%>
+<%@ page import="java.util.Date"%>
 	<footer class="container">
 		<p>&copy; 쇼핑몰 대표 : 김유진, 고유번호 : 20211397, 연락처 : havekdujs5236@naver.com<br> 
 

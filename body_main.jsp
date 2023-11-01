@@ -24,7 +24,7 @@
          %>
          <div class="col-md-4">
             <div class="card bg-dark text-white">
-                <img src="image/product/<%=product.getFilename()%>" class="card-img" alt="...">
+                <img src="image/<%=product.getFilename()%>" class="card-img" alt="...">
                         <div class="card-img-overlay">
                         <h5 class="card-title">ipad pro</h5>
                         <p class="card-text">출처 : apple</p>
