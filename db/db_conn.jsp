@@ -6,9 +6,9 @@
 	ResultSet rs = null;
 	
 	try {
-		String url = "jdbc:mysql://localhost:3306/데이터베이스 이름?characterEncoding=utf8";
+		String url = "jdbc:mysql://localhost:3306/ggoupang_20211397?characterEncoding=utf8";
 		String user = "root";
-		String password = “123123";
+		String password = "123123";
 
 		Class.forName("com.mysql.jdbc.Driver");
 		conn = DriverManager.getConnection(url, user, password);
