@@ -15,7 +15,8 @@
 	</div>
     
     <div>
-        <img src="image\apple logo.png" class="img-fluid" alt="main_image">
+        <img src="image/apple logo.png" class="img-fluid" alt="main_image">
+
     </div>
     
 	<div class="container">

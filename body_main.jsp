@@ -30,7 +30,7 @@
 
          <div class="col-md-4">
             <div class="card bg-dark text-white">
-                <img src="image/product/<%=rs.getString("p_fileName")%>" class="card-img" alt="...">
+                <img src="image/<%=rs.getString("p_fileName")%>" class="card-img" alt="...">
                         <div class="card-img-overlay">
                         <h5 class="card-title">ipad pro</h5>
                         <p class="card-text">출처 : apple</p>
@@ -59,7 +59,7 @@
    </div>
         
         <div class="card bg-dark text-white">
-    <img src="image/iphone 14.jpg" style="max-width: 1000px; height: auto; display: block; margin: 0 auto;" class="card-img" alt="...">
+    <img src="image/iPhone112.jpg" style="max-width: 1000px; height: auto; display: block; margin: 0 auto;" class="card-img" alt="...">
     <div class="card-img-overlay">
     <h5 class="card-title">iphone 14 pro</h5>
     <p class="card-text">출처 : apple</p>
