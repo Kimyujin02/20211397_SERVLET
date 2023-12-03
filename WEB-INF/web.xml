@@ -12,7 +12,6 @@
             <url-pattern>/Admin/product_add.jsp</url-pattern>
             	<url-pattern>/Admin/index_ad.jsp</url-pattern>
             	<url-pattern>/Admin/product_edit.jsp</url-pattern>
-			<url-pattern>/Admin/index_ad.jsp</url-pattern>
 		</web-resource-collection>
 		<auth-constraint>
 			<description>권한 관리자명</description>

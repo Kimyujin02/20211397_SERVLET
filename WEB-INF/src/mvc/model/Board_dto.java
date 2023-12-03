@@ -26,7 +26,6 @@ public class Board_dto {
 		return id;
 	}
 
-    
 	public void setId(String id) {
 		this.id = id;
 	}
@@ -55,8 +54,6 @@ public class Board_dto {
 		this.content = content;
 	}
 
-
-    
 	public String getRegist_day() {
 		return regist_day;
 	}
@@ -82,3 +79,4 @@ public class Board_dto {
 	}
 
 }
+
