@@ -72,7 +72,6 @@
 	</div>
 	<hr>
    </div>
-   <jsp:include page="footer_ad.jsp" />
 </body>
 </html>
 
